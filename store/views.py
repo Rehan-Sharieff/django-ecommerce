@@ -5,4 +5,6 @@ def product_list(request):
     products = Product.objects.all()
     return render(request, 'store/product_list.html', {'products': products})
 
-# Create your views here.
+
+def home(request):
+ return render(request, 'home.html')
